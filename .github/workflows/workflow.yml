@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Build
+        run: yarn build
+
       - name: Deploy to App Engine
         id: deploy
         uses: google-github-actions/deploy-appengine@main
